@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Airbnb</title>
+	<link rel="stylesheet" type="text/css" href="node_modules/materialize-css/dist/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/style.min.css">
+	<link rel="icon" type="image/ico" href="images/logo_air.png">
+
+</head>
+<body>
+<!-- Result Filtros -->
+	<div class="container">
+		<form action="#" class="row">
+			<div class="box col s12 m4">
+				<h6>Dónde</h6>
+				<div class="row">
+					<div class="input-field col s12 m12">
+						<input type="text" id="autocomplete-input" class="autocomplete">
+			          	<label for="autocomplete-input">Destino, ciudad, direción</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- llegada - salida-->
+			<div class="box col s12 m4">
+				<h6>Cuándo</h6>
+				<div class="row">
+				<!-- llegada-->
+		       	<div class="input-field col s6 valign-wrapper">
+		        	<input type="date" class="datepicker" placeholder="Llegada">
+		          	<label for="salida"></label>
+		        </div>
+
+
+				<!--salida-->
+		        <div class="input-field col s6 valign-wrapper">
+		        	<input type="date" class="datepicker" placeholder="Salida">
+		          	<label for="salida"></label>
+		        </div>
+		      </div>
+			</div>
+
+			<!-- huespedes-->
+			<div class="box col s12 m4">
+				<h6>Huéspedes</h6>
+				<div class="row">
+				
+					<div class="input-field col s12 m6">
+					    <select class="icons">
+					      <option value="1" selected>1 Huesped</option>
+					      <option value="2">2 Huespedes</option>
+					      <option value="2">3 Huespedes</option>
+					    </select>
+				  </div>
+		
+					 
+					<!--boton buscar-->
+					<div class="col s12 m6">
+						<a href="direccion de resultados" class="waves-effect red btn-large">Buscar</a>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+	<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="src/js/jquery.cycle.all.min.js"></script>
+	<script type="text/javascript" src="node_modules/materialize-css/dist/js/materialize.min.js"></script>
+	<script type="text/javascript" src="dist/js/script.min.js"></script>
+	<script type="text/javascript" src="dist/js/componente-picker.js"></script>
+
+</body>
+</html>
